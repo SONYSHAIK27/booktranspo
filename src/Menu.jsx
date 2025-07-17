@@ -78,7 +78,9 @@ const Menu = () => {
           Why Booktranspo
         </a>
         <a
-          href="#delivery-partners"
+          href="http://192.168.1.4:3000/delivery-partners"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
             fontFamily: 'Sora, sans-serif',
             fontWeight: 400,
@@ -131,11 +133,13 @@ const Menu = () => {
       </div>
       {/* Right: Phone image */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '308px', height: '110px', marginRight: '0px' }}>
-        <img
-          src={phoneIcon}
-          alt="Contact Us"
-          style={{ width: '308px', height: '110px', objectFit: 'contain', borderRadius: '100px', marginTop: '20px' }}
-        />
+        <a href="http://192.168.1.4:3000/" target="_blank" rel="noopener noreferrer">
+          <img
+            src={phoneIcon}
+            alt="Contact Us"
+            style={{ width: '308px', height: '110px', objectFit: 'contain', borderRadius: '100px', marginTop: '20px', cursor: 'pointer' }}
+          />
+        </a>
       </div>
     </nav>
   );
