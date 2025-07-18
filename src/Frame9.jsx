@@ -41,13 +41,15 @@ const Frame9 = ({ faqs = defaultFaqs }) => {
   return (
     <div
       style={{
-        width: '100%',
+        width: '1440px',
+        margin: '0 auto',
         minHeight: '974px',
         background: 'linear-gradient(to bottom, #fff3ef 0%, #ffffff 20%)',
-        padding: '60px 0',
+        padding: '97px 271px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        gap: '10px',
         boxSizing: 'border-box',
       }}
     >

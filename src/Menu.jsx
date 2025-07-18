@@ -1,5 +1,5 @@
 import React from 'react';
-import phoneIcon from './assets/phone.png';
+import phone1Icon from './assets/phone1.png';
 
 const Menu = () => {
   return (
@@ -11,7 +11,9 @@ const Menu = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        padding: '0 45px',
+        padding: '0 70px',
+        width: '1440px',
+        boxSizing: 'border-box',
       }}
     >
       {/* Left: Logo */}
@@ -23,8 +25,8 @@ const Menu = () => {
           background: '#FFF',
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'center',
-          marginLeft: '32px',
+          justifyContent: 'flex-start',
+          marginRight: '60px',
         }}
       >
         <img
@@ -38,9 +40,12 @@ const Menu = () => {
         style={{
           display: 'flex',
           alignItems: 'center',
-          gap: '64px',
+          gap: '44px',
           height: '23px',
           justifyContent: 'center',
+          margin: '0 auto',
+          marginRight: '11px',
+          marginLeft: '40px',
         }}
       >
         <a
@@ -133,14 +138,30 @@ const Menu = () => {
           Join Us
         </a>
       </div>
-      {/* Right: Phone image */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '308px', height: '110px', marginRight: '0px' }}>
+      {/* Right: Contact Us button */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', minWidth: '308px', height: '110px' }}>
         <a href="http://192.168.1.4:3000/" target="_blank" rel="noopener noreferrer">
-          <img
-            src={phoneIcon}
-            alt="Contact Us"
-            style={{ width: '308px', height: '110px', objectFit: 'contain', borderRadius: '100px', marginTop: '20px', cursor: 'pointer' }}
-          />
+          <button style={{
+            width: '160px',
+            height: '48px',
+            background: '#16214A',
+            color: '#FFF',
+            border: 'none',
+            borderRadius: '100px',
+            padding: '10px',
+            fontFamily: 'Sora, sans-serif',
+            fontWeight: 600,
+            fontSize: '16px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            boxShadow: '0 4px 24px 0 rgba(22, 33, 74, 0.10)',
+            cursor: 'pointer',
+            gap: '4px',
+          }}>
+            <img src={phone1Icon} alt="Phone" style={{ width: '20px', height: '20px', objectFit: 'contain' }} />
+            Contact Us
+          </button>
         </a>
       </div>
     </nav>

@@ -21,7 +21,7 @@ const Frame10 = ({
   navLinks = defaultNavLinks,
   officeTitle = 'Registered Office:',
   companyName = 'Karrierx Technologies Private Limited',
-  companyAddress = 'New Maruthi Nagar, Kothapet, Hyderabad, Telangana 500060',
+  companyAddress = 'New Maruthi Nagar, Kothapet, Hyderabad,\nTelangana 500060',
   companyCIN = 'U4923TTS2025PTC196256',
 }) => {
   // Split navLinks into columns for layout
@@ -31,27 +31,30 @@ const Frame10 = ({
   return (
     <div
       style={{
-        width: '100%',
+        width: '1440px',
+        margin: '0 auto',
+        height: '338px',
         background: '#1C264C',
-        padding: '40px 0 0 0',
+        padding: '70px 70px 20px 70px',
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'space-between',
+        boxSizing: 'border-box',
       }}
     >
       <div
         style={{
-          width: '95%',
-          maxWidth: '1600px',
+          width: '1301px',
+          margin: '0 auto',
           display: 'flex',
           flexDirection: 'row',
-          justifyContent: 'space-between',
+          gap: '80px',
           alignItems: 'flex-start',
           color: '#fff',
           fontFamily: 'Sora, sans-serif',
         }}
       >
         {/* Logo and Contact */}
-        <div style={{ minWidth: 320, maxWidth: 350 }}>
+        <div style={{ minWidth: 250, maxWidth: 250 }}>
           <img src={logoSrc} alt="Logo" style={{ width: 120, height: 120, borderRadius: '50%', background: '#fff', marginBottom: 16 }} />
           <hr style={{ border: 'none', borderTop: '1px dashed #fff', margin: '16px 0', width: '100%' }} />
           <div style={{ marginBottom: 8 }}>
@@ -62,25 +65,25 @@ const Frame10 = ({
           </div>
         </div>
         {/* Navigation Links */}
-        <div style={{ display: 'flex', flex: 2, justifyContent: 'center', gap: 80 }}>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+        <div style={{ display: 'flex', gap: 80 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
             {leftLinks.map(link => (
               <a key={link.label} href={link.url} style={{ color: '#fff', textDecoration: 'none', fontWeight: 400, fontSize: 18 }} target="_blank" rel="noopener noreferrer">{link.label}</a>
             ))}
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
             {rightLinks.map(link => (
               <a key={link.label} href={link.url} style={{ color: '#fff', textDecoration: 'none', fontWeight: 400, fontSize: 18 }} target="_blank" rel="noopener noreferrer">{link.label}</a>
             ))}
           </div>
         </div>
         {/* Registered Office Info */}
-        <div style={{ minWidth: 320, maxWidth: 350 }}>
-          <div style={{ fontWeight: 400, fontSize: 18, marginBottom: 8 }}>{officeTitle}</div>
-          <hr style={{ border: 'none', borderTop: '1px dashed #fff', margin: '8px 0', width: '100%' }} />
-          <div style={{ fontWeight: 700, fontSize: 18, marginBottom: 4 }}>{companyName}</div>
-          <div style={{ fontWeight: 400, fontSize: 16, marginBottom: 12 }}>{companyAddress}</div>
-          <div style={{ fontWeight: 700, fontSize: 16 }}>CIN: <span style={{ fontWeight: 400 }}>{companyCIN}</span></div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+          <div style={{ fontWeight: 400, fontSize: 16, marginBottom: 2 }}>{officeTitle}</div>
+          <hr style={{ border: 'none', borderTop: '1px dashed #fff', margin: '2px 0 6px 0', width: '100%' }} />
+          <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 0 }}>{companyName}</div>
+          <div style={{ fontWeight: 400, fontSize: 15, marginBottom: 12, whiteSpace: 'pre-line', lineHeight: 1.2 }}>{companyAddress}</div>
+          <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 0 }}>CIN: <span style={{ fontWeight: 400 }}>{companyCIN}</span></div>
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ const Frame8 = () => {
         padding: '69px 173px',
         display: 'flex',
         flexDirection: 'column',
-        gap: '74px', // Figma gap
+        gap: '10px',
         boxSizing: 'border-box',
         alignItems: 'center',
         justifyContent: 'center',

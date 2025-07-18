@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400&display=swap');
 
 .topbar {
-  width: 1440px;
+  width: 100%;
   height: 48px;
   background: #FFEDEA;
   display: flex;

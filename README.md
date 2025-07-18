@@ -1,4 +1,4 @@
-# Booktranspo Frontend
+# Booktranspo Frontend page
 
 This is the frontend for the Booktranspo homepage built with React.
 
