@@ -44,7 +44,9 @@ const Menu = () => {
         }}
       >
         <a
-          href="#home"
+          href="http://192.168.1.7:3000"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
             fontFamily: 'Sora, sans-serif',
             fontWeight: 400,
